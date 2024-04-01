@@ -1,3 +1,4 @@
+--Criação das "Tables" utilizadas--
 CREATE TABLE usuario (
   id_usuario		int PRIMARY KEY,
   nome				varchar(100),
@@ -26,6 +27,7 @@ CREATE TABLE investimento (
   tipo_investidor	varchar(100)
 );
 
+--insersão dos elementos do "usuário"--
 
 INSERT INTO usuario (id_usuario, nome, email, idade)
 	VALUES (1, 'Renan', 'renan@gmail.com', 20);
@@ -45,6 +47,8 @@ INSERT INTO usuario (id_usuario, nome, email, idade)
 	VALUES (8, 'Claudio', 'claudio@gmail.com', 78);
 ;
 
+--insersão dos elementos do "gasto"--
+
 INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
 	VALUES (1, 2024-03-15,  130.00, 'Hobby');
 INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
@@ -62,6 +66,8 @@ INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
 INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
 	VALUES (8, 2024-03-29,  100.00, 'Fachineira');
 ;
+
+--insersão dos elementos do "ganho"--
 
 INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
 	VALUES (1, 2024-03-01, 200.00, 'Tigrinho');
@@ -81,6 +87,8 @@ INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
 	VALUES (8, 2024-03-18, 500.00,'Tigrinho');
 ;
 
+--insersão dos elementos do "investimento"--
+
 INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
 	VALUES (1, 2024-03-25, 200.00, 'Conservador');
 INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
@@ -99,6 +107,7 @@ INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
 	VALUES (8, 2024-03-18, 200.00,'Conservador');
 ;
 
+--Comandos utilizados para visualizar as tabels criadas acima--
 
 SELECT * FROM usuario;
 SELECT * FROM gasto;
