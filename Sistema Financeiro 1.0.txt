@@ -1,0 +1,106 @@
+CREATE TABLE usuario (
+  id_usuario		int PRIMARY KEY,
+  nome				varchar(100),
+  email				varchar(100),
+  idade				int
+);
+
+CREATE TABLE gasto (
+  id_gasto		int,
+  data				date,
+  valor				double,
+  Tipo_gasto		varchar(100)
+);
+
+CREATE TABLE ganho (
+  id_ganho			int,
+  data				date(100),
+  valor				double,
+  tipo_ganho		varchar(100)
+);
+
+CREATE TABLE investimento (
+  id_investimento	varchar(100),
+  data				date,
+  valor				double,
+  tipo_investidor	varchar(100)
+);
+
+
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (1, 'Renan', 'renan@gmail.com', 20);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (2, 'Jorge', 'jorge@gmail.com', 23);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (3, 'Cleiton', 'cleiton@gmail.com', 25);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (4, 'Carlos', 'carlos@gmail.com', 64);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (5, 'Cristiano', 'cristiano@gmail.com', 86);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (6, 'Ronaldo', 'ronaldo@gmail.com', 34);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (7, 'Cleber', 'cleber@gmail.com', 23);
+INSERT INTO usuario (id_usuario, nome, email, idade)
+	VALUES (8, 'Claudio', 'claudio@gmail.com', 78);
+;
+
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (1, 2024-03-15,  130.00, 'Hobby');
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (2, 2024-03-28,  140.00, 'Água');
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (3, 2024-03-01,  11.00, 'Hobby');
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (4, 2024-03-02,  170.00, 'Hobby');
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (5, 2024-03-13,  120.00, 'Hobby');
+INSERT INTO gasto(id_gasto, data, valor, tipo_gasto)
+	VALUES (6, 2024-03-26,  230.00, 'Luz');
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (7, 2024-03-12,  700.00, 'Manutenção do carro');
+INSERT INTO gasto (id_gasto, data, valor, tipo_gasto)
+	VALUES (8, 2024-03-29,  100.00, 'Fachineira');
+;
+
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (1, 2024-03-01, 200.00, 'Tigrinho');
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (2, 2024-03-23, 400.00, 'Tigrinho' );
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (3, 2024-03-24, 400.00,'Tigrinho');
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (4, 2024-03-22, 2500.00,'Salário');
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (5, 2024-03-21, 800.00,'Tigrinho');
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (6, 2024-03-20, 700.00,'Tigrinho');
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (7, 2024-03-19, 600.00,'Tigrinho');
+INSERT INTO ganho (id_ganho, data, valor, tipo_ganho)
+	VALUES (8, 2024-03-18, 500.00,'Tigrinho');
+;
+
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (1, 2024-03-25, 200.00, 'Conservador');
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (2, 2024-03-23, 400.00, 'Moderado' );
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (3, 2024-03-24, 200.00,'Conservador');
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (4, 2024-03-22, 350.00,'Moderado');
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (5, 2024-03-21, 450.00,'Moderado');
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (6, 2024-03-20, 150.00,'Conservador');
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (7, 2024-03-19, 800.00,'Arrojado');
+INSERT INTO investimento (id_investimento, data, valor, tipo_investidor)
+	VALUES (8, 2024-03-18, 200.00,'Conservador');
+;
+
+
+SELECT * FROM usuario;
+SELECT * FROM gasto;
+SELECT * FROM ganho;
+SELECT * FROM investimento;
